@@ -4,36 +4,128 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Event Invitation</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f9fc;
+      color: #333;
+    }
+
+    /* Centering the container */
+    .container {
+      width: 90%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      border: 2px solid #90e0ef;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 0;
+      background-color: #90e0ef;
+      color: white;
+      border-radius: 10px 10px 0 0;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    header .event-date {
+      font-size: 1.2rem;
+      font-weight: normal;
+    }
+
+    section {
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    section p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    /* RSVP Form Styles */
+    form input, form textarea {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    form button {
+      padding: 12px 20px;
+      background-color: #90e0ef;
+      color: white;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #48c6ef;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #f1f9fc;
+      padding: 15px;
+      border-radius: 0 0 10px 10px;
+      color: #333;
+    }
+
+    footer p {
+      font-size: 1rem;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Hero Section -->
-  <header>
-    <div>
+  <div class="container">
+    <!-- Hero Section -->
+    <header>
       <h1>You're Invited!</h1>
       <p><strong>Anna & John's Wedding</strong></p>
-      <p>April 30, 2024 | 5:00 PM</p>
-      <div>
-        <p>Time Remaining: <span id="countdown">Loading countdown...</span></p>
-      </div>
-    </div>
-  </header>
+      <p class="event-date">April 30, 2024 | 5:00 PM</p>
+    </header>
 
-  <!-- Event Details Section -->
-  <section>
-    <div>
+    <!-- Event Details Section -->
+    <section>
       <h2>Event Details</h2>
       <p>We are delighted to invite you to our wedding celebration. Join us for an evening of love, laughter, and unforgettable memories.</p>
       <h3>Location:</h3>
       <p>The Grand Hotel, 123 Celebration Street, Cityville</p>
       <h3>Dress Code:</h3>
       <p>Formal Attire</p>
-    </div>
-  </section>
+    </section>
 
-  <!-- RSVP Form Section -->
-  <section>
-    <div>
+    <!-- RSVP Form Section -->
+    <section>
       <h2>RSVP</h2>
       <p>Let us know if you can join the celebration!</p>
       <form action="#" method="post">
@@ -42,24 +134,13 @@
         <textarea name="message" placeholder="Message (optional)"></textarea>
         <button type="submit">Send RSVP</button>
       </form>
-    </div>
-  </section>
+    </section>
 
-  <!-- Map Section -->
-  <section>
-    <div>
-      <h2>Location</h2>
-      <p>Find us on the map below:</p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.7591841945376!2d-74.00597278467389!3d40.71277597933011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22e327888b%3A0x5c2b9355b8ed7d5f!2s123+Celebration+St%2C+Cityville!5e0!3m2!1sen!2sus!4v1632937794815!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-  </section>
-
-  <!-- Footer Section -->
-  <footer>
-    <div>
+    <!-- Footer Section -->
+    <footer>
       <p>&copy; 2024 Anna & John's Wedding</p>
-    </div>
-  </footer>
+    </footer>
+  </div>
 
 </body>
 </html>
